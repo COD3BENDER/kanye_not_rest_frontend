@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-size {
+  width: 500px;
+  height: 500px;
+}
+
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align menu items and title */
+  align-items: center; /* Vertically center the title */
+}
+
+.navbar-title {
+  color: white; /* Make the title white */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* image spinner */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.spinner {
+  position: absolute;
+  bottom: 20px; /* Adjust the desired distance from the bottom */
+  left: -100px; /* Adjust the starting position from the left */
+  animation: moveAndSpin 4s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveAndSpin {
+  0% {
+    transform: translateX(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) rotate(360deg);
+  }
+}
+
+
+/* App.css */
+body {
+  background: linear-gradient(to bottom, black, black 25%, red 25%, red 50%, blue 50%, blue 75%, green 75%);
+  background-size: 100% 200%;
+  animation: colorChange 4s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+.quote-text {
+  color: #170101; /* Set the text color to white */
+}
+
+/* kanyeContainer.css */
+
+.translucent-container {
+  background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  width: 600px; /* Set the width to 600px */
+  height: 650px; /* Set the height to 800px */
+  margin: 20px auto; /* Add margin to create space from the top (adjust the value as needed) */
+}
+
+/* Add these styles to your existing CSS or create a new one */
+
+.blue-button {
+  background-color: #04191e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px; /* Add margin-top to lower the button */
+}
+
+.blue-button:hover {
+  background-color: #38460a;
+}
+
+
+
+
+
